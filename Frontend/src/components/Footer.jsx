@@ -13,30 +13,29 @@ const contactDetails = [
   {
     value: (
       <>
-        Gat No.166/1, Godown No.4, Shinde Mala, Uruli Devachi, Ta. Haveli,
-        Dist. Pune (MH) - 412308
+         Leemansstraat 2, 4251 LD - Werkendam, the Netherlands
       </>
     ),
     icon: MapPin,
   },
   {
-    value: "cropixo08@gmail.com",
-    href: "mailto:cropixo08@gmail.com",
+    value: "benefertico@gmail.com",
+    href: "mailto:benefertico@gmail.com",
     icon: Mail,
   },
   {
-    value: "+91 90112 00034",
-    href: "tel:+919011200034",
+    value: "+31183505268",
+    href: "tel:+31183505268",
     icon: Phone,
   },
-  {
-    value: "License No.: LCFWD2026070863",
-    icon: BadgeCheck,
-  },
-  {
-    value: "Importer-Exporter Code: AZMPP1640E",
-    icon: FileText,
-  },
+  // {
+  //   value: "License No.: LCFWD2026070863",
+  //   icon: BadgeCheck,
+  // },
+  // {
+  //   value: "Importer-Exporter Code: AZMPP1640E",
+  //   icon: FileText,
+  // },
 ];
 
 export default function Footer() {
@@ -68,8 +67,8 @@ export default function Footer() {
 
           <nav className="benfertico-navigation" aria-label="Footer navigation">
             <Link to="/products">Products</Link>
-            <Link to="/#agriculture">About</Link>
-            <Link to="/#contact">Contact</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
           </nav>
 
           <div className="benfertico-contact">
