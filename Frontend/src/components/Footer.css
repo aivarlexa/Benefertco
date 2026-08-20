@@ -41,6 +41,10 @@
   align-items: start !important;
 }
 
+.benfertico-footer-grid > * {
+  min-width: 0;
+}
+
 /* Company */
 
 .benfertico-company-heading {
@@ -193,8 +197,23 @@
     gap: 40px !important;
   }
 
+  .benfertico-company-heading {
+    align-items: flex-start !important;
+  }
+
+  .benfertico-leaf-icon {
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+  }
+
+  .benfertico-company-label {
+    font-size: 14px !important;
+  }
+
   .benfertico-company-name {
     font-size: 23px !important;
+    overflow-wrap: anywhere !important;
   }
 
   .benfertico-description {
@@ -212,5 +231,10 @@
 
   .benfertico-contact-item {
     font-size: 15px !important;
+  }
+
+  .benfertico-contact-item > div {
+    min-width: 0 !important;
+    overflow-wrap: anywhere !important;
   }
 }
