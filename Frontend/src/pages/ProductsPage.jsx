@@ -56,7 +56,7 @@ export default function ProductsPage() {
       {/* =====================================================
           PAGE HEADER
       ===================================================== */}
-      <section className="px-4 pb-7 pt-32 sm:px-6 md:pt-36">
+      <section className="px-4 pb-7 pt-28 sm:px-6 sm:pt-32 md:pt-36">
         <div className="mx-auto w-full max-w-[1050px]">
 
           <p
@@ -76,12 +76,12 @@ export default function ProductsPage() {
               mt-4
               max-w-[760px]
               font-[var(--font-display)]
-              text-[3.2rem]
+              text-4xl
               font-black
               leading-[0.94]
               tracking-[-0.045em]
               text-[#17261d]
-              sm:text-[4rem]
+              sm:text-[3.7rem]
               md:text-[4.7rem]
             "
           >
@@ -152,6 +152,7 @@ export default function ProductsPage() {
                 aria-label="Search products"
                 className="
                   ml-3
+                  min-w-0
                   w-full
                   border-0
                   bg-transparent
@@ -210,9 +211,10 @@ export default function ProductsPage() {
                     className={`
                       rounded-full
                       border
-                      px-4
+                      max-w-full
+                      px-3
                       py-2
-                      text-[10px]
+                      text-[9px]
                       font-extrabold
                       transition-all
                       duration-200
@@ -320,18 +322,20 @@ export default function ProductsPage() {
                   className="
                     relative
                     flex
-                    h-[205px]
+                    h-[190px]
                     w-full
                     items-center
                     justify-center
                     overflow-hidden
                     rounded-[14px]
                     bg-[#f2f5ed]
+                    sm:h-[205px]
                   "
                 >
 
                   {/* Category badge */}
                   <span
+                    title={product.category}
                     className="
                       absolute
                       left-3
@@ -347,6 +351,8 @@ export default function ProductsPage() {
                       tracking-[0.13em]
                       text-[#356044]
                       shadow-[0_3px_10px_rgba(0,0,0,0.06)]
+                      max-w-[45%]
+                      truncate
                     "
                   >
                     {product.category}
@@ -354,6 +360,7 @@ export default function ProductsPage() {
 
                   {/* Product type */}
                   <span
+                    title={product.productType}
                     className="
                       absolute
                       right-3
@@ -370,6 +377,8 @@ export default function ProductsPage() {
                       uppercase
                       tracking-[0.1em]
                       text-[#718078]
+                      max-w-[45%]
+                      truncate
                     "
                   >
                     {product.productType}
