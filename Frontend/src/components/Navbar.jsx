@@ -6,7 +6,7 @@ import logo from '../assets/BeneferticoLogo.png';
 const navItems = [
   { label: 'Products', to: '/products', icon: Package },
   { label: 'About', to: '/#agriculture', icon: Sparkles },
-  { label: 'Contact', to: '/#contact', icon: Mail },
+  { label: 'Contact', to: '/contact', icon: Mail },
 ];
 
 export default function Navbar() {
@@ -47,7 +47,7 @@ export default function Navbar() {
           </div>
 
           <Link
-            to="/#contact"
+            to="/contact"
             className="site-navbar-cta"
           >
             Dealer Inquiry
@@ -82,7 +82,7 @@ export default function Navbar() {
               );
             })}
             <Link
-              to="/#contact"
+              to="/contact"
               className="site-mobile-cta"
               onClick={() => setIsMobileMenuOpen(false)}
             >
