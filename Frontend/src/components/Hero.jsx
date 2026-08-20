@@ -208,7 +208,7 @@ export default function Hero() {
   </Link>
 
   <Link
-    to="/#agriculture"
+    to="/about"
     style={{
       marginLeft: "20px",
       background:
