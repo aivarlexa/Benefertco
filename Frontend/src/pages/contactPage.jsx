@@ -21,7 +21,7 @@ export default function ContactPage() {
     formData.append("access_key", "bdf97004-72e9-40ea-b0b5-39a6775de3f7");
     
     // Optional: Sets a clean subject line in your incoming email
-    formData.append("subject", "New Inquiry from Cropixo Website");
+    formData.append("subject", "New Inquiry from Benefertico Website");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
