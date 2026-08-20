@@ -10,6 +10,7 @@ export default function CTASection() {
         src={agri1}
         alt="Dutch windmill over agricultural fields"
         className="
+          cta-bg-animation
           absolute
           inset-0
           h-full
