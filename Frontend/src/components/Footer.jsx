@@ -1,11 +1,4 @@
-import {
-  BadgeCheck,
-  FileText,
-  Leaf,
-  Mail,
-  MapPin,
-  Phone,
-} from "lucide-react";
+import { Leaf, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
