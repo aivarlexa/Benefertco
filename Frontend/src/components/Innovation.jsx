@@ -57,27 +57,30 @@ export default function Innovation() {
           >
             Fertilizer Solutions
           </p>
+          <div className="flex w-full flex-col items-center text-center">
 
-          <h2
-            className="
-              mx-auto
-              mt-3
-              max-w-2xl
-              font-[var(--font-display)]
-              text-3xl
-              font-extrabold
-              leading-[1.05]
-              tracking-[-0.03em]
-              text-[var(--ink)]
-              md:text-5xl
-            "
-          >
-            Better Nutrition.
-            <span className="block text-[var(--forest)]">
-              Stronger Growth.
-            </span>
-          </h2>
-
+         <h2
+  className="
+    mx-auto
+    mt-3
+    max-w-2xl
+    text-center
+    font-[var(--font-display)]
+    text-3xl
+    font-extrabold
+    leading-[1.05]
+    tracking-[-0.03em]
+    text-[var(--ink)]
+    md:text-5xl
+  "
+>
+  Better Nutrition.
+  <span className="block text-[var(--forest)]">
+    Stronger Growth.
+  </span>
+</h2>
+</div>
+{/* 
           <p
             className="
               mx-auto
@@ -93,7 +96,7 @@ export default function Innovation() {
             From essential NPK nutrients to specialized crop nutrition,
             our solutions help growers make precise and efficient
             nutrition decisions.
-          </p>
+          </p> */}
         </Reveal>
 
         {/* ================= FIRST FEATURE ================= */}
