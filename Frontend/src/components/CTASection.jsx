@@ -140,7 +140,7 @@ export default function CTASection() {
   "
 >
             Give Every Crop
-        <span className="mt-4 block text-[#1f5136]">
+        <span className="mt-4 block text-[#1f5136]" style={{ color: "#af840b" }}>
   Its Best Start.
 </span>
           </h2>
@@ -150,11 +150,11 @@ export default function CTASection() {
   style={{
     color: "#ffffff",
     WebkitTextFillColor: "#ffffff",
+      fontSize: "18px",
   }}
   className="
     mt-[60px]
     whitespace-nowrap
-    text-lg
     font-bold
     leading-8
     tracking-[-0.01em]
@@ -163,7 +163,7 @@ export default function CTASection() {
     md:leading-8
   "
 >
-  Explore our fertilizer collection and discover carefully &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; formulated nutrition solutions designed to support healthy, balanced crop growth.
+  Explore our fertilizer collection and discover&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; carefully formulated nutrition solutions designed to support healthy, balanced crop growth.
 </p>
          <div className="mt-[50px]">
             <Link
