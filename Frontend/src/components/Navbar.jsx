@@ -5,7 +5,7 @@ import logo from '../assets/BeneferticoLogo.png';
 
 const navItems = [
   { label: 'Products', to: '/products', icon: Package },
-  { label: 'About', to: '/#agriculture', icon: Sparkles },
+  { label: 'About', to: '/about', icon: Sparkles },
   { label: 'Contact', to: '/contact', icon: Mail },
 ];
 
