@@ -51,9 +51,9 @@ const buttonClass = 'inline-flex items-center justify-center gap-2 rounded-full 
       <div className="rounded-[32px] bg-[#123f2a] p-[clamp(28px,5vw,56px)] text-white">
         <p className="mb-3 text-xs font-extrabold uppercase tracking-[0.13em]">Contact</p>
         <h1 className="mb-5 text-5xl font-bold leading-none md:text-7xl">Start a crop nutrition inquiry.</h1>
-        <p className="flex items-center gap-2.5 text-white/80 mt"><MapPin size={18} /> Gat No.166/1, Godown No.4, Shinde Mala, Uruli Devachi, Ta. Haveli, Dist. Pune (MH) - 412308</p>
+        <p className="flex items-center gap-2.5 text-white/80 mt"><MapPin size={18} /> Leemansstraat 2, 4251 LD - Werkendam, the Netherlands</p>
         <p className="flex items-center gap-2.5 text-white/80"><Mail size={18} /> benefertico@gmail.com</p>
-        <p className="flex items-center gap-2.5 text-white/80"><Phone size={18} /> +91 90112 00034</p>
+        <p className="flex items-center gap-2.5 text-white/80"><Phone size={18} /> +31183505268</p>
         <p className="flex items-center gap-2.5 text-white/80"><Globe2 size={18} /> Benefertico Nutrition</p>
       </div>
       <form onSubmit={handleSubmit} className="grid gap-4 rounded-3xl border border-[#1f6f4324] bg-white/80 p-[clamp(24px,4vw,42px)] shadow-[0_24px_70px_rgba(22,48,35,0.12)]" aria-label="Inquiry form">
