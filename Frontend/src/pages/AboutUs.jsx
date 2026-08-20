@@ -40,7 +40,7 @@ export default function AboutUs() {
         <img
           src={agri4}
           alt="Modern agricultural landscape"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover cta-bg-animation"
         />
 
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,24,15,0.94)_0%,rgba(7,24,15,0.78)_42%,rgba(7,24,15,0.28)_100%)]" />
