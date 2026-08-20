@@ -228,7 +228,7 @@ export default function Innovation() {
 
               {/* FEATURE CARDS */}
               <div className="mt-8 grid gap-3 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3">
-                {features.map((item, index) => {
+                {features.map((item) => {
                   const Icon = item.icon;
 
                   return (
