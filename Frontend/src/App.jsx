@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import ProductsPage from './pages/ProductsPage';
+import ContactPage from './pages/contactPage';
 
 function ScrollManager() {
   const location = useLocation();
@@ -41,6 +42,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/products/:id" element={<ProductDetailPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
         <Footer />
