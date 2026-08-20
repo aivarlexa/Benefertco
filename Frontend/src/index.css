@@ -496,3 +496,23 @@ p {
     scroll-behavior: auto !important;
   }
 }
+/* CTA background image animation */
+@keyframes ctaBackgroundMotion {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08) translate3d(-1%, -0.5%, 0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cta-bg-animation {
+  animation: ctaBackgroundMotion 18s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
