@@ -75,44 +75,44 @@ export default function Hero() {
         "
       >
         <Reveal className="relative z-30 max-w-4xl">
-          <div
-            style={{
-              marginTop: "130px",
-              color: "#ffffff",
-            }}
-            className="
-              inline-flex
-              items-center
-              gap-2
-              border-l-2
-              border-[var(--tulip)]
-              pl-3
-              text-[11px]
-              font-bold
-              uppercase
-              tracking-[0.20em]
-              md:text-xs
-            "
-          >
-            <Sprout
-              size={15}
-              strokeWidth={2.2}
-              color="#ffffff"
-            />
+         <div
+  style={{
+    color: "#ffffff",
+    transform: "translateY(-60px)",
+  }}
+  className="
+    inline-flex
+    items-center
+    gap-2
+    border-l-2
+    border-[var(--tulip)]
+    pl-3
+    text-[11px]
+    font-bold
+    uppercase
+    tracking-[0.20em]
+    md:text-xs
+  "
+>
+  <Sprout
+    size={15}
+    strokeWidth={2.2}
+    color="#ffffff"
+  />
 
-            <span
-              style={{
-                color: "#ffffff",
-                textShadow: "0 2px 10px rgba(0,0,0,0.4)",
-              }}
-            >
-              Netherlands-inspired crop nutrition
-            </span>
-          </div>
+  <span
+    style={{
+      color: "#ffffff",
+      textShadow: "0 2px 10px rgba(0,0,0,0.4)",
+    }}
+  >
+    Netherlands-inspired crop nutrition
+  </span>
+</div>
 
           <h1
             style={{
-              marginTop: "24px",
+              transform: "translateY(-40px)",
               color: "#ffffff",
               fontFamily: "var(--font-display)",
               textShadow: "0 4px 24px rgba(0,0,0,0.20)",
@@ -141,7 +141,7 @@ export default function Hero() {
 
           <p
             style={{
-              marginTop: "42px",
+             transform: "translateY(-10px)",
               color: "#ffffff",
               textShadow: "0 2px 12px rgba(0,0,0,0.55)",
             }}
@@ -160,7 +160,7 @@ export default function Hero() {
           </p>
 <div
   style={{
-    marginTop: "32px",
+   transform: "translateY(10px)",
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
@@ -239,7 +239,7 @@ export default function Hero() {
 </div>
           <div
             style={{
-              marginTop: "10px",
+              marginTop: "50px",
               color: "rgba(255,255,255,0.65)",
             }}
             className="
