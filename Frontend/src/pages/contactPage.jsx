@@ -15,32 +15,43 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
 
 const handleSubmit = async (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  e.preventDefault()
+  e.stopPropagation()
 
-    const formData = new FormData(e.currentTarget)
-    formData.append("access_key", "08bad501-ecc4-4151-95dc-2a0e3f257695")
-    formData.append("subject", "New Inquiry from Benefertico Website")
+  if (isSubmitting) return
 
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData
-      })
+  setIsSubmitting(true)
 
-      const data = await response.json()
-      if (data.success) {
-        alert("Inquiry sent successfully!")
-        e.currentTarget.reset()
-      } else {
-        alert("Error sending inquiry: " + (data.message || "Please check details."))
-      }
-    } catch {
-      alert("Something went wrong. Please check your network and try again.")
-    } finally {
-      setIsSubmitting(false)
+  const form = e.currentTarget
+  const formData = new FormData(form)
+
+  formData.append("access_key", "08bad501-ecc4-4151-95dc-2a0e3f257695")
+  formData.append("subject", "New Inquiry from Benefertico Website")
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    })
+
+    const data = await response.json()
+
+    if (data.success) {
+      form.reset()
+      alert("Inquiry sent successfully!")
+    } else {
+      alert(
+        "Error sending inquiry: " +
+        (data.message || "Please check your details.")
+      )
     }
+  } catch (error) {
+    console.error("Form submission error:", error)
+    alert("Something went wrong. Please try again.")
+  } finally {
+    setIsSubmitting(false)
   }
+}
 
   const inputClasses = 
     "w-full rounded-2xl border border-emerald-950/10 bg-emerald-50/20 px-4 py-3.5 text-emerald-950 transition-all duration-200 placeholder:text-emerald-900/40 hover:border-emerald-800/25 focus:border-[#123f2a] focus:bg-white focus:outline-none focus:ring-4 focus:ring-[#123f2a]/10"
