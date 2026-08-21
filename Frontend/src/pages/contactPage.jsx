@@ -17,7 +17,7 @@ export default function ContactPage() {
 const handleSubmit = async (e) => {
   e.preventDefault()
   e.stopPropagation()
-s
+
   if (isSubmitting) return
 
   setIsSubmitting(true)
