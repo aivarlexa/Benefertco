@@ -17,7 +17,7 @@ export default function ContactPage() {
 const handleSubmit = async (e) => {
   e.preventDefault()
   e.stopPropagation()
-
+s
   if (isSubmitting) return
 
   setIsSubmitting(true)
@@ -142,7 +142,7 @@ const handleSubmit = async (e) => {
                   className={inputClasses}
                   type="text" 
                   name="name" 
-                  placeholder="John Doe"
+                  placeholder="Enter your full name"
                   required 
                 />
               </div>
@@ -157,7 +157,7 @@ const handleSubmit = async (e) => {
                 className={inputClasses}
                 type="email" 
                 name="email" 
-                placeholder="john@example.com"
+                placeholder="Enter your email address"
                 required 
               />
             </div>

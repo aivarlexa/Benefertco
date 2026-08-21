@@ -3,8 +3,8 @@ import { ArrowLeft, ArrowRight, CheckCircle2 } from 'lucide-react'
 import { products } from '../data/products.js'
 
 function ProductDetailPage() {
-  const { slug } = useParams()
-  const product = products.find((item) => String(item.id) === slug)
+  const { id } = useParams()
+  const product = products.find((item) => String(item.id) === id)
 
   if (!product) {
     return (
