@@ -19,8 +19,8 @@ const handleSubmit = async (e) => {
     setIsSubmitting(true)
 
     const formData = new FormData(e.currentTarget)
-    formData.append("access_key", "bdf97004-72e9-40ea-b0b5-39a6775de3f7")
-    formData.append("subject", "New Inquiry from Benefertico Nutrition ")
+    formData.append("access_key", "08bad501-ecc4-4151-95dc-2a0e3f257695")
+    formData.append("subject", "New Inquiry from Benefertico Nutrition Website")
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
