@@ -20,7 +20,7 @@ const handleSubmit = async (e) => {
 
     const formData = new FormData(e.currentTarget)
     formData.append("access_key", "bdf97004-72e9-40ea-b0b5-39a6775de3f7")
-    formData.append("subject", "New Inquiry from Benefertico Website")
+    formData.append("subject", "New Inquiry from Benefertico Nutrition ")
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -131,7 +131,7 @@ const handleSubmit = async (e) => {
                   className={inputClasses}
                   type="text" 
                   name="name" 
-                  placeholder="John Doe"
+                  placeholder="Enter your full name"
                   required 
                 />
               </div>
@@ -146,7 +146,7 @@ const handleSubmit = async (e) => {
                 className={inputClasses}
                 type="email" 
                 name="email" 
-                placeholder="john@example.com"
+                placeholder="Enter your email address"
                 required 
               />
             </div>
